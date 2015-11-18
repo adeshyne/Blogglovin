@@ -25,10 +25,10 @@
 	</ul>
 
 	<% if !user_signed_in? %>
-	<p class="sign in">Admin Log in</p>
-	<% end %>
+	<p class="sign_in">Admin Login</p>
 	</div>
-	
+	<% end %>
+
 	<div id="main_content">
 	<div id="header">
 	<% if current_page?(root_path)%>
@@ -48,6 +48,7 @@
 	</div>
 	<% end %>
 	</div>
+	
 
 	<% flash.each do |name, msg| %>
 	<%= content_tag(:div, msg, class: "alert") %>
